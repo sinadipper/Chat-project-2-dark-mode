@@ -1,0 +1,12 @@
+Optimize search:
+
+Instead of creating a new array for every key press (with find), you might consider using a mapping function or better data structure if your contact list is large. For improved performance in larger lists, consider implementing a memoized search function using libraries like lodash.
+Enhance UX:
+
+Add a clear button in the Searchbar to reset the search input and the list, providing a more interactive experience.
+Disable buttons when not needed:
+
+Consider disabling the buttons (Reload, Contacts, Search) unless there's a specific function attached to them or when necessary.
+State Naming:
+
+Rename setFoundContact to something like setSearchedContact for clarity, as it sets the value of input rather than found contact.
